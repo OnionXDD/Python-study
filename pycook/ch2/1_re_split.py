@@ -25,6 +25,6 @@ print(values)
 print(delimiters)
 print(''.join(v+d for v,d in zip(values,delimiters)))
 
-# non-captured ;? 可以让你放弃掉捕获的第一个分隔符
+# non-captured ?: 可以让你放弃掉捕获的第一个分隔符
 print(re.split(r'(?:,|;|\s)\s*', line))
 
